@@ -27,9 +27,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	  //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
 		 KC_LSFT, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                               KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT,
 	  //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐        ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-		 KC_LCTL, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_LGUI,          KC_MPLY, KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT,
+		 KC_LCTL, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_LALT,          KC_MPLY, KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT,
 	  //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┴───┬────┘        └───┬────┴───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
-										LOWER,   KC_SPC,  KC_LALT,                   KC_RCTL,  KC_ENT,  RAISE
+										LOWER,   KC_SPC,  KC_LGUI,                   KC_RCTL,  KC_ENT,  RAISE
 									// └────────┴────────┴────────┘                 └────────┴────────┴────────┘
 	),
 
@@ -37,7 +37,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	  //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
 		 KC_PSCR, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,                            KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN,  KC_TRNS,
 	  //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-		 KC_TRNS, KC_NO,   KC_NO,   KC_NO,   KC_LT,   KC_NO,   					 		  KC_NO,   KC_GT,   KC_MINS, KC_PLUS, KC_EQL,  KC_TRNS,
+		 KC_TRNS, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_LT,   					 		  KC_GT,   KC_MINS, KC_PLUS, KC_EQL,  KC_NO,   KC_TRNS,
 	  //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
 		 KC_TRNS, KC_GRV,  KC_SLSH, KC_LBRC, KC_LPRN, KC_LCBR,                            KC_RCBR, KC_RPRN, KC_RBRC, KC_BSLS, KC_UNDS, KC_TRNS,
 	  //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐        ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
