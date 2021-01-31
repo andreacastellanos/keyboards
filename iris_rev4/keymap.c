@@ -12,8 +12,6 @@ enum custom_keycodes {
 	LOWER,
 	RAISE,
 	ADJUST,
-	DEL_PREV,
-	DEL_NEXT,
 };
 
 
@@ -67,7 +65,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	  //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
 		 KC_NO,   KC_NO,   KC_MPRV, KC_MPLY, KC_MNXT, KC_NO, 			 	 			  KC_NO,   KC_VOLU, KC_VOLD, KC_MUTE, KC_NO,   KC_NO, 
 	  //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-		 KC_NO,   KC_NO,   KC_NO,   KC_NO, 	 DEL_PREV,KC_NO,			 	 			  KC_NO,   DEL_NEXT,KC_NO,   KC_NO,	  KC_NO,   KC_NO, 
+		 KC_NO,   KC_NO,   KC_NO,   KC_NO, 	 KC_NO,   KC_NO,			 	 			  KC_NO,   KC_NO,   KC_NO,   KC_NO,	  KC_NO,   KC_NO,
 	  //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐        ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
 		 RGB_TOG, RGB_MOD, BL_TOGG, BL_STEP, KC_NO,   KC_NO,   RESET,   		 KC_NO,   RGB_VAI, RGB_VAD, RGB_HUI, RGB_HUD, RGB_SAI, RGB_SAD,
 	  //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┴───┬────┘        └───┬────┴───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
@@ -111,16 +109,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 				layer_off(_ADJUST);
 			}
 			return false;
-			break;
-		case DEL_PREV:
-			if (record->event.pressed) {
-				SEND_STRING(SS_DOWN(X_LCTRL)SS_DOWN(X_LSHIFT)SS_TAP(X_LEFT)SS_UP(X_LSHIFT)SS_UP(X_LCTRL)SS_TAP(X_DELETE));
-			}
-			break;
-		case DEL_NEXT:
-			if (record->event.pressed) {
-				SEND_STRING(SS_DOWN(X_LCTRL)SS_DOWN(X_LSHIFT)SS_TAP(X_RIGHT)SS_UP(X_LSHIFT)SS_UP(X_LCTRL)SS_TAP(X_DELETE));
-			}
 			break;
 		}
 	return true;
