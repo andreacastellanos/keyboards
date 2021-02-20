@@ -33,3 +33,17 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define TAP_CODE_DELAY 10
 #define ENCODER_RESOLUTION 4
+
+
+/* save space */
+#define NO_ACTION_TAPPING
+#define NO_ACTION_MACRO
+#define NO_ACTION_FUNCTION
+
+
+#ifndef NO_DEBUG
+#define NO_DEBUG
+#endif // !NO_DEBUG
+#if !defined(NO_PRINT) && !defined(CONSOLE_ENABLE)
+#define NO_PRINT
+#endif // !NO_PRINT
