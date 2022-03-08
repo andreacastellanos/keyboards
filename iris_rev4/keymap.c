@@ -1,4 +1,4 @@
-#include QMK_KEYBOARD_H
+﻿#include QMK_KEYBOARD_H
 
 extern keymap_config_t keymap_config;
 
@@ -49,7 +49,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
        KC_PSCR, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,                            KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_TRNS,
     //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-       KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                              KC_GT,   KC_MINS, KC_PLUS, KC_EQL,  KC_NO,   KC_TRNS,
+       KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                              KC_GT,   KC_PLUS, KC_MINS, KC_EQL,  KC_NO,   KC_TRNS,
     //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
        KC_TILD, KC_GRV,  KC_SLSH, KC_LBRC, KC_LPRN, KC_LCBR,                            KC_RCBR, KC_RPRN, KC_RBRC, KC_BSLS, KC_UNDS, KC_PIPE,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐        ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
